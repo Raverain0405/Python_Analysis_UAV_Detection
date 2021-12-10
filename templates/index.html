@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+<div class="login">
+    <h1>Predict UAV intrusion</h1>
+    <br>
+    <p>This is a model predicting the intrusion of the three drones combined</p>
+    <img src="http://mason.gmu.edu/~lzhao9/materials/data/UAV/UAVs.png"
+    width="800" height="300" />
+    
+
+    <form action = "{{url_for('predict')}}" method="post">
+        <input type = "text" name="upls_mean" placeholder="uplink_size_mean" required="required"/>
+        <br>
+        <input type = "text" name="upls_med" placeholder="uplink_size_median" required="required"/>
+        <br>
+        <input type = "text" name="dwnls_mean" placeholder="downlink_size_mean" required="required"/>
+        <br>
+        <input type = "text" name="dwnls_med" placeholder="downlink_size_median" required="required"/>
+        <br>
+        <input type = "text" name="bls_mean" placeholder="both_link_size_mean" required="required"/>
+        <br>
+        <input type = "text" name="bls_med" placeholder="both_link_size_median" required="required"/>
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+    <br>
+    <br>
+    {{prediction_text}}
+</div>
+
+
+{% endblock %}
