@@ -4,6 +4,7 @@ This is an analysis of the UAV intrusion dataset. The goal is to predict wether 
 
 Datasets and variables explained here:  http://mason.gmu.edu/~lzhao9/materials/data/UAV/
 
+We only took the 56 variables datasets (3 links size) as they are more interesting to work with.
 
 We found these variables to have a strong correlation with the target variable:
 - all Size_mean variables (3 links)
