@@ -16,6 +16,6 @@ In summary, we tested some machine learning algorithms with the selected variabl
 - Stochastic gradient descent classifier
 
 
-
+We then generalized the process for the 3 datasets and combined them together. Surprisingly, we still got an extremely good accuracy (>= 99%)
 
 
