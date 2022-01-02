@@ -6,3 +6,6 @@ venv/Scripts/activate
 
 To run the project:
 pyhton app.py
+
+This API give you the possibility to test with a certain data set if you have an intrusion or not. 
+
